@@ -12,9 +12,8 @@ class DBSettings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
-        extra = 'allow'
-        
+        extra = "allow"
+
+
 class Settings(BaseSettings):
     db: ClassVar = DBSettings()
-
-

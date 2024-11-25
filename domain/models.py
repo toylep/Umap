@@ -1,8 +1,10 @@
 from sqlalchemy import Integer, String, ForeignKey
-from sqlalchemy.orm import Mapped, mapped_column, relationship,declarative_base
+from sqlalchemy.orm import Mapped, mapped_column, relationship, declarative_base
+
 # from config.db import Base
 
 Base = declarative_base()
+
 
 class BuildingPart(Base):
 

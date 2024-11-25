@@ -21,3 +21,6 @@ migrate:
 
 logs:
 	@$(DOCKER_COMP) logs $(name) --tail=0 --follow
+
+linter:
+	@uv run black .
