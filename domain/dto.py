@@ -17,3 +17,10 @@ class RoomDTO(CustomModel):
 
 class BuildingPartDTO(CustomModel):
     name: str
+
+
+class MapPointDTO(CustomModel):
+    # type: str # Начальная, конечная, смена этажа, промежуточная
+    lng: float
+    lat: float
+    floor_num: int
